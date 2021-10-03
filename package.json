@@ -2,7 +2,7 @@
   "name": "node_learn",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,5 +16,14 @@
   "bugs": {
     "url": "https://github.com/Sandilem7789/node_learn/issues"
   },
-  "homepage": "https://github.com/Sandilem7789/node_learn#readme"
+  "homepage": "https://github.com/Sandilem7789/node_learn#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.8"
+  },
+  "devDependencies": {
+    "concurrently": "^6.3.0",
+    "nodemon": "^2.0.13"
+  }
 }

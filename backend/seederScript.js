@@ -12,13 +12,11 @@ const importData = async () => {
 
 		//inserting many objects at the same time
 		await Product.insertMany(productsData)
-
 		console.log("Data Import Success")
-
 		process.exit()
 
   } catch (error) {
-		console.error("Error with Data Import")
+		console.error("Error with Data Import", error)
 		process.exit(1)
 	}
 }

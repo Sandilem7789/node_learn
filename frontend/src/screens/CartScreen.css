@@ -1,7 +1,8 @@
 .cartscreen {
     display: flex;
-    max-width: 1300px;
+    max-width: 99%;
     margin-top: 2rem auto;
+    justify-content: center;
 }
 
 .cartscreen h2 {
@@ -22,6 +23,7 @@
     height: fit-content;
     border-radius: 10px;
     margin-top: 60px;
+    
 }
 
 .cartscreen__right div {
@@ -49,4 +51,20 @@
 
 .cartscreen__right div button:hover {
     opacity: 0.9;
+}
+
+
+@media (max-width: 960px) {
+    .cartscreen {
+        max-width: 97%;
+        flex-direction: column;
+    }
+
+    .cartscreen__left {
+        margin: 0;
+    }
+
+    .cartscreen__right {
+        margin: 1rem;
+    }
 }
